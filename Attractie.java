@@ -18,12 +18,14 @@ abstract class Attractie implements IAttractie {
 
     }
 
-    public void draaien(int d) {
-        aantalRondjes = aantalRondjes + d;
+    public int draaien() {
+        aantalRondjes = aantalRondjes + 1;
+        return aantalRondjes;
     }
 
-    public void koopKaartje(int k) {
-        kaartjesVerkocht = kaartjesVerkocht + k;
+    public int koopKaartje() {
+        kaartjesVerkocht = kaartjesVerkocht + 1;
+        return kaartjesVerkocht;
     }
 
     public String get_naamAttractie() {

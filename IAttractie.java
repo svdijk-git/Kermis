@@ -1,10 +1,10 @@
 package com.les;
-import java.awt.*;
 
-public interface IAttractie{
+public interface IAttractie {
 
-    public void draaien(int d);
-    public void koopKaartje(int k);
+    public int draaien();
+
+    public int koopKaartje();
 
 
 }
