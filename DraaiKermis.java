@@ -7,7 +7,7 @@ public class DraaiKermis {
     public static void main(String[] args) {
 
         /*1*/
-        Botsauto auto1 = new Botsauto();
+        Botsauto auto1 = new Botsauto("Botsauto", 2.50);
         /*2*/
         Spin spin1 = new Spin();
         /*3*/
@@ -27,7 +27,7 @@ public class DraaiKermis {
 
             Scanner input = new Scanner(System.in);
             try {
-                System.out.println("Druk \n1 voor Botsauto's \n2 voor Spin \n3 voor Spiegelpaleis \n4 voor Spookhuis \n5 voor Hawaii \n6 voor Ladderklimmen");
+                System.out.println("Druk \n1 voor Botsauto's \n2 voor Spin \n3 voor Spiegelpaleis \n4 voor Spookhuis \n5 voor Hawaii \n6 voor Ladderklimmen \n");
                 toestel = Integer.parseInt(input.nextLine()); //try catch
 
             } catch (Exception e) {

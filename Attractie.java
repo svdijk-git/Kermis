@@ -6,15 +6,17 @@ abstract class Attractie implements IAttractie {
     private int _oppervlakte;
     private int _ticketsVerkocht;
     private double _ticketPrijs;
+    private double _omzet;
     int aantalRondjes = 0;
     int kaartjesVerkocht = 0;
 
 
-    public void Attractie(String naamAttractie, int oppervlakte, int ticketsVerkocht, int ticketPrijs) {
+    public Attractie(String naamAttractie, double ticketPrijs, int oppervlakte) {
         this._naamAttractie = naamAttractie;
         this._oppervlakte = oppervlakte;
-        this._ticketsVerkocht = ticketsVerkocht;
+        this._ticketsVerkocht = 0;
         this._ticketPrijs = ticketPrijs;
+        this.aantalRondjes = aantalRondjes;
 
     }
 
@@ -29,10 +31,26 @@ abstract class Attractie implements IAttractie {
     }
 
     public String get_naamAttractie() {
-        return _naamAttractie;
+        return this._naamAttractie;
     }
 
-    public void set_naamAttractie(String _naamAttractie) {
-        this._naamAttractie = _naamAttractie;
+//    public set_naamAttractie(String naamAttractie) {
+//        this._naamAttractie = naamAttractie;
+//    }
+
+    public double get_omzet() {
+        return this._omzet;
+    }
+
+    public void set_omzet(double nieuweOmzet) {
+        this._omzet = nieuweOmzet;
+    }
+
+    public double get_ticketPrijs() {
+        return this._ticketPrijs;
+    }
+
+    public void set_ticketPrijs(double ticketPrijs) {
+        this._ticketPrijs = ticketPrijs;
     }
 }
