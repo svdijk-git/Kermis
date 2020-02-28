@@ -23,7 +23,7 @@ public class DraaiKermis {
         String[] attracties = {"Botsauto", "Spin", "Spiegelpaleis", "Spookhuis", "Hawaii", "Ladderklimmen"};
         int toestel = 0;
         // System.out.println("Druk 1 voor Botsauto's \n2 voor Spin \n3 voor Spiegelpaleis \n4 voor Spookhuis \n5 voor Hawaii \n6 voor Ladderklimmen");
-        while (true) {
+        while (true) {      //switch statement? static var (in main) naar 1 om uit loop te breken met break. if loop in do loop
 
             Scanner input = new Scanner(System.in);
             try {
@@ -31,7 +31,7 @@ public class DraaiKermis {
                 toestel = Integer.parseInt(input.nextLine()); //try catch
 
             } catch (Exception e) {
-                System.out.println("help");
+                System.out.println("Geen getal tussen 1 en 6");
             }
             if (toestel <= 0 || toestel >= 7) {
                 System.out.println("Kies een getal tussen 1 en 6");

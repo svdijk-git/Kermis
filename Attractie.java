@@ -1,6 +1,6 @@
 package com.les;
 
-abstract class Attractie implements IAttractie {
+abstract class Attractie {
 
     private String _naamAttractie;
     private int _oppervlakte;
