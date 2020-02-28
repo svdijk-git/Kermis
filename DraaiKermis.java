@@ -1,25 +1,28 @@
 package com.les;
 
 import java.util.Scanner;
-//maak class kermis met daarin een lijst van (class) Attractie (returntype?) en dan .add botsauto
 
-// interface met draaien methode
-// attracties als class met naam, ticketprijs,aantal tickets verkocht en oppervlakte, rest extend
 public class DraaiKermis {
 
     public static void main(String[] args) {
 
+        /*1*/
         Botsauto auto1 = new Botsauto();
+        /*2*/
         Spin spin1 = new Spin();
+        /*3*/
         Spiegelpaleis sp1 = new Spiegelpaleis();
+        /*4*/
         Spookhuis sh1 = new Spookhuis();
+        /*5*/
         Hawaii haw1 = new Hawaii();
+        /*6*/
         Ladderklimmen lk1 = new Ladderklimmen();
 
 
         String[] attracties = {"Botsauto", "Spin", "Spiegelpaleis", "Spookhuis", "Hawaii", "Ladderklimmen"};
         int toestel = 0;
-        System.out.println("Druk 1 voor Botsauto's \n2 voor Spin \n3 voor Spiegelpaleis \n4 voor Spookhuis \n5 voor Hawaii \n6 voor Ladderklimmen");
+        // System.out.println("Druk 1 voor Botsauto's \n2 voor Spin \n3 voor Spiegelpaleis \n4 voor Spookhuis \n5 voor Hawaii \n6 voor Ladderklimmen");
         while (true) {
 
             Scanner input = new Scanner(System.in);
@@ -36,17 +39,36 @@ public class DraaiKermis {
             } else if (toestel == 1) {
                 auto1.draaien();
                 auto1.koopKaartje();
-                System.out.println(auto1.aantalRondjes);
-                System.out.println("Botsauto's draaien");
+                System.out.println("Botsen maar!");
 
             } else if (toestel == 2) {
                 spin1.draaien();
                 spin1.koopKaartje();
-                System.out.println(spin1.aantalRondjes);
-                System.out.println("De Spin draait");
+                System.out.println("Welkom in de Spin");
+
+            } else if (toestel == 3) {
+                sp1.draaien();
+                sp1.koopKaartje();
+                System.out.println("Welkom in het SpiegelPaleis");
+
+            } else if (toestel == 4) {
+                sh1.draaien();
+                sh1.koopKaartje();
+                System.out.println("Welkom in het Spookhuis");
+
+            } else if (toestel == 5) {
+                haw1.draaien();
+                haw1.koopKaartje();
+                System.out.println("Welcome to Hawaii, enjoy your stay");
+
+            } else if (toestel == 6) {
+                lk1.draaien();
+                lk1.koopKaartje();
+                System.out.println("Iets met ladders en klimmen");
 
             } else {
                 System.out.println("nada");
+                input.close();
             }
 
         }
@@ -58,7 +80,9 @@ public class DraaiKermis {
         // System.out.println(attnr);
         //for loop voor de scanner
 
-
+//maak class kermis met daarin een lijst van (class) Attractie (returntype?) en dan .add botsauto
+// interface met draaien methode
+// attracties als class met naam, ticketprijs,aantal tickets verkocht en oppervlakte, rest extend
     }
 
 
