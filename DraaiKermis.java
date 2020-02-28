@@ -9,15 +9,15 @@ public class DraaiKermis {
         /*1*/
         Botsauto auto1 = new Botsauto("Botsauto", 2.50);
         /*2*/
-        Spin spin1 = new Spin();
+        Spin spin1 = new Spin("Spin", 2.25);
         /*3*/
-        Spiegelpaleis sp1 = new Spiegelpaleis();
+        Spiegelpaleis sp1 = new Spiegelpaleis("Spiegelpaleis", 2.75);
         /*4*/
-        Spookhuis sh1 = new Spookhuis();
+        Spookhuis sh1 = new Spookhuis("Spookhuis", 3.20);
         /*5*/
-        Hawaii haw1 = new Hawaii();
+        Hawaii haw1 = new Hawaii("Hawaii", 2.90);
         /*6*/
-        Ladderklimmen lk1 = new Ladderklimmen();
+        Ladderklimmen lk1 = new Ladderklimmen("Ladderklimmen", 5.00);
 
 
         String[] attracties = {"Botsauto", "Spin", "Spiegelpaleis", "Spookhuis", "Hawaii", "Ladderklimmen"};
@@ -74,15 +74,6 @@ public class DraaiKermis {
         }
 
 
-        //attracties in een array?
-// https://codereview.stackexchange.com/questions/37376/vending-machine-implementation
-        // int attnr = sc.nextInt();       //aparte methode met header en vraag im input, scanner checked. in methode draaien?
-        // System.out.println(attnr);
-        //for loop voor de scanner
-
-//maak class kermis met daarin een lijst van (class) Attractie (returntype?) en dan .add botsauto
-// interface met draaien methode
-// attracties als class met naam, ticketprijs,aantal tickets verkocht en oppervlakte, rest extend
     }
 
 
